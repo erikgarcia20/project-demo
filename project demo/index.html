@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Tickets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Movie Tickets</h2>
+
+  <label>Select Movie:</label>
+  <select id="movie">
+    <option value="">Choose</option>
+    <option value="10">Movie 1</option>
+    <option value="12">Movie 2</option>
+    <option value="8">Movie 3</option>
+  </select>
+
+  <div id="seats" class="hidden">
+    <p id="seatMsg"></p>
+    <div class="grid">
+      <div class="seat taken"></div>
+      <div class="seat taken"></div>
+      <div class="seat taken"></div>
+      <div class="seat available"></div>
+      <div class="seat available"></div>
+      <div class="seat taken"></div>
+      <div class="seat available"></div>
+      <div class="seat available"></div>
+      <div class="seat available"></div>
+    </div>
+  </div>
+
+  <p id="count"></p>
+  <p>Total: $<span id="total">0</span></p>
+
+  <button id="confirmBtn">Confirm</button>
+
+  <div id="payment" class="hidden">
+    <p>Select Payment Method:</p>
+    <button class="pay">Cash</button>
+    <button class="pay">Credit</button>
+    <button class="pay">Debit</button>
+  </div>
+
+  <p id="finalMsg"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
